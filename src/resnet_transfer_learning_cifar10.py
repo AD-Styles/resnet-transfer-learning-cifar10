@@ -1,6 +1,7 @@
 # ==========================================
 # [Cell 1] Setup, Hyperparameters, and Data
 # ==========================================
+
 import os
 import time
 import platform
@@ -76,9 +77,11 @@ test_ds  = make_dataset(x_test, y_test)
 
 print("\nData pipeline ready.")
 
+
 # ==========================================
 # [Cell 2] Model Builder & Training Helpers
 # ==========================================
+
 def build_model(backbone_fn, num_classes=10, img_size=IMG_SIZE):
     inputs = layers.Input(shape=(img_size, img_size, 3))
     x = layers.Lambda(tf.keras.applications.resnet.preprocess_input, name="resnet_preprocess")(inputs)
@@ -134,9 +137,11 @@ def run_stage_b(model, backbone, label):
 
 print("Models and helpers initialized.")
 
+
 # ==========================================
 # [Cell 3] Execute Training
 # ==========================================
+
 # Build ResNet50
 resnet50_model, resnet50_base = build_model(ResNet50)
 print(f"ResNet50 Total params: {resnet50_model.count_params() / 1e6:.2f} M")
@@ -155,9 +160,11 @@ hist101_b, test101_b            = run_stage_b(resnet101_model, resnet101_base, "
 
 print("\nTraining completed for both models.")
 
+
 # ==========================================
 # [Cell 4] Evaluation & Visualization (KeyError 및 OOM 완전 방지 패치)
 # ==========================================
+
 import gc
 
 print("Keras 3 호환성 패치 적용: 메모리 내 모델들로부터 안전하게 지표를 복구합니다...")
@@ -185,7 +192,7 @@ def safe_evaluate(model):
         
     return metrics
 
-# 1. 램(RAM)에 살아있는 모델들로 평가 지표 재계산 (약 10~20초 소요)
+# 1. 램(RAM)에 살아있는 모델들로 평가 지표 재계산
 test50_a  = safe_evaluate(snap50_a)
 test50_b  = safe_evaluate(resnet50_model)
 test101_a = safe_evaluate(snap101_a)
