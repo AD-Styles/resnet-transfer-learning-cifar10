@@ -45,7 +45,7 @@
 
 ## 🏗️ Architecture
 
-### ResNet 핵심 원리: Skip Connection
+### 1. ResNet 핵심 원리: Skip Connection
 
 ```
 [ 기존 방식 ]           [ ResNet 방식 ]
