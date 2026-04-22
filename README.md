@@ -27,18 +27,18 @@
 ---
 
 ## 📂 프로젝트 구조 (Project Structure)
-```
-resnet-transfer-learning-cifar10/
-│
-├── resnet_transfer_learning_cifar10.py   # 메인 학습 스크립트 (Kaggle 실행용)
-├── README.md
-│
-└── outputs/                              # 학습 후 자동 생성
-    ├── fig_01_cifar10_samples.png        # 클래스별 샘플 시각화
-    ├── fig_02_curves_ResNet50.png        # ResNet50 학습 곡선
-    ├── fig_02_curves_ResNet101.png       # ResNet101 학습 곡선
-    ├── fig_03_accuracy_comparison.png    # 4모델 정확도 비교 막대 그래프
-    └── fig_04_efficiency_comparison.png  # 파라미터/정확도/속도 효율 비교
+```text
+├─ results/                                     # 성능 평가 및 시각화 결과물 모음
+│  ├─ fig_02_curves_ResNet50.png                # ResNet50 학습 곡선
+│  ├─ fig_02_curves_ResNet101.png               # ResNet101 학습 곡선
+│  ├─ fig_03_accuracy_comparison.png            # 4모델 정확도 비교 막대 그래프
+│  └─ fig_04_efficiency_comparison.png          # 파라미터/정확도/속도 효율 비교
+├─ src/
+│  └─ resnet_transfer_learning_cifar10.py       # 메인 학습 파이프라인 스크립트
+├─ .gitignore                                   # Git 추적 제외 설정
+├─ LICENSE                                      # 프로젝트 라이선스
+├─ README.md                                    # 프로젝트 상세 설명 문서
+└─ requirements.txt                             # 패키지 의존성 명세
 ```
 
 ---
