@@ -47,7 +47,7 @@ resnet-transfer-learning-cifar10/
 | **데이터셋** | CIFAR-10 (자동 다운로드 — `tf.keras.datasets`) |
 | **출력 경로** | `/kaggle/working/` |
 
-<br>
+---
 
 ## 📊 Dataset: CIFAR-10
 
@@ -67,7 +67,7 @@ resnet-transfer-learning-cifar10/
 > Test set 기반 하이퍼파라미터 조정 시, 선택 과정이 Test set에 간접적으로 맞춰져  
 > 실제보다 부풀려진 정확도 보고 위험 존재 (Optimistic Bias).
 
-<br>
+---
 
 ## 🏗️ Architecture
 
