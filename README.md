@@ -1,9 +1,6 @@
 # 🧠 ResNet Transfer Learning & Fine-Tuning on CIFAR-10
+### ResNet50 vs ResNet101** — ImageNet 사전학습 모델을 CIFAR-10에 전이학습/파인튜닝하여 Skip Connection의 원리, Stage A/B 학습 전략, 모델 효율성을 비교 분석한 프로젝트
 
-> **ResNet50 vs ResNet101** — ImageNet 사전학습 모델을 CIFAR-10에 전이학습/파인튜닝하여  
-> Skip Connection의 원리, Stage A/B 학습 전략, 모델 효율성을 비교 분석한 프로젝트
-
-<br>
 
 ## 📌 Project Overview
 
