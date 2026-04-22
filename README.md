@@ -2,9 +2,12 @@
 ### **ResNet50 vs ResNet101** — ImageNet 사전학습 모델을 CIFAR-10에 전이학습/파인튜닝하여 Skip Connection의 원리, Stage A/B 학습 전략, 모델 효율성을 비교 분석한 프로젝트
 
 
+
+---
+
 ## 📌 프로젝트 요약 (Project Overview)
 
-딥러닝에서 "깊으면 깊을수록 좋다"는 직관은 오랫동안 사실이 아니었습니다. 20층만 넘어가도 gradient vanishing으로 인해 얕은 네트워크보다 성능이 떨어지는 **Degradation Problem**이 발생했기 때문입니다. ResNet(He et al., 2015)은 이 문제를 **Skip Connection(잔차 연결)** 이라는 단순하지만 강력한 아이디어로 해결하여, 152층짜리 네트워크도 안정적으로 학습할 수 있게 만들었습니다.
+딥러닝에서 "깊으면 깊을수록 좋다"는 직관은 오랫동안 사실이 아니었습니다. 20층만 넘어가도 gradient vanishing으로 인해 얕은 네트워크보다 성능이 떨어지는 **Degradation Problem**이 발생했기 때문입니다. ResNet 은 이 문제를 **Skip Connection(잔차 연결)** 이라는 단순하지만 강력한 아이디어로 해결하여, 152층짜리 네트워크도 안정적으로 학습할 수 있게 만들었습니다.
 
 ---
 
