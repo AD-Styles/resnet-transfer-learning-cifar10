@@ -298,4 +298,4 @@ plot_learning_curves(hist101_a, hist101_b, "ResNet101")
 plot_accuracy_comparison(test50_a, test50_b, test101_a, test101_b)
 plot_efficiency_radar(resnet50_model.count_params()/1e6, resnet101_model.count_params()/1e6, test50_b, test101_b, resnet50_ms, resnet101_ms)
 
-print("\nDone. Output files saved to /kaggle/working/")
+print(f"\nDone. Output files saved to {OUTPUT_DIR}/")
