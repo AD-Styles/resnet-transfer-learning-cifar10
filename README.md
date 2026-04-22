@@ -54,7 +54,7 @@ resnet-transfer-learning-cifar10/
                            ReLU
 ```
 
-Skip Connection의 핵심은 네트워크가 **전체 출력 H(x)를 직접 학습하는 대신, 입력 대비 잔차 F(x) = H(x) − x 만을 학습**하게 만드는 구조입니다. 학습이 실패하더라도 F(x) → 0 이 되어 H(x) → x (identity mapping)가 보장되므로, 깊이가 늘어도 성능 저하가 발생하지 않습니다. 이것이 Gradient Vanishing 없이 152층까지 학습 가능한 핵심 이유입니다.
+Skip Connection의 핵심은 네트워크가 **전체 출력 H(x)를 직접 학습하는 대신, 입력 대비 잔차 F(x) = H(x) − x 만을 학습**하게 만드는 구조. 학습이 실패하더라도 F(x) → 0 이 되어 H(x) → x (identity mapping)가 보장되므로, 깊이가 늘어도 성능 저하가 발생하지 않음. 이것이 Gradient Vanishing 없이 152층까지 학습 가능한 핵심 이유...
 
 ### Bottleneck Block (ResNet50 / ResNet101 적용 구조)
 
