@@ -36,20 +36,6 @@ resnet-transfer-learning-cifar10/
 
 ---
 
-## 📊 Dataset: CIFAR-10
-
-| 항목 | 내용 |
-|------|------|
-| **총 이미지 수** | 60,000장 (컬러 RGB) |
-| **원본 해상도** | 32 × 32 px |
-| **모델 입력 해상도** | 224 × 224 px (bilinear resize) |
-| **클래스 수** | 10개 (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck) |
-| **Train 분할** | 45,000장 (stratified split) |
-| **Validation 분할** | 5,000장 (Train의 10%, stratify 적용) |
-| **Test 분할** | 10,000장 (공식 분할 — 학습 중 절대 미사용) |
-
----
-
 ## 🏗️ Architecture
 
 ### ResNet 핵심 원리: Skip Connection
