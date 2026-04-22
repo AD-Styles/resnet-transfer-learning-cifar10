@@ -35,10 +35,10 @@
 │  └─ fig_04_efficiency_comparison.png          # 파라미터/정확도/속도 효율 비교
 ├─ src/
 │  └─ resnet_transfer_learning_cifar10.py       # 메인 학습 파이프라인 스크립트
-├─ .gitignore                                   # Git 추적 제외 설정
-├─ LICENSE                                      # 프로젝트 라이선스
-├─ README.md                                    # 프로젝트 상세 설명 문서
-└─ requirements.txt                             # 패키지 의존성 명세
+├─ .gitignore                                   
+├─ LICENSE                                      
+├─ README.md                                   
+└─ requirements.txt                            
 ```
 
 ---
