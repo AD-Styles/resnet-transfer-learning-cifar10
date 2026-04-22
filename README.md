@@ -11,7 +11,7 @@
 
 ---
 
-##🎯 핵심 목표 (Motivation)
+## 🎯 핵심 목표 (Motivation)
 
 1. **왜 ResNet인가?** — Skip Connection이 실제로 학습에 어떤 영향을 주는지
 2. **어떻게 파인튜닝 하는가?** — Stage A/B 전략의 설계 근거와 하이퍼파라미터 선택 이유
