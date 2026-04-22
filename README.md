@@ -36,19 +36,6 @@ resnet-transfer-learning-cifar10/
 
 ---
 
-## ⚙️ Environment & Dependencies
-
-| 항목 | 내용 |
-|------|------|
-| **실행 환경** | Kaggle Notebook (GPU — Tesla P100 / T4 권장) |
-| **Python** | 3.10+ |
-| **TensorFlow** | 2.12+ |
-| **주요 라이브러리** | `numpy`, `pandas`, `matplotlib`, `scikit-learn` |
-| **데이터셋** | CIFAR-10 (자동 다운로드 — `tf.keras.datasets`) |
-| **출력 경로** | `/kaggle/working/` |
-
----
-
 ## 📊 Dataset: CIFAR-10
 
 | 항목 | 내용 |
