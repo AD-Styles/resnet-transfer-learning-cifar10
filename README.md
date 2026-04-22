@@ -48,12 +48,6 @@ resnet-transfer-learning-cifar10/
 | **Validation 분할** | 5,000장 (Train의 10%, stratify 적용) |
 | **Test 분할** | 10,000장 (공식 분할 — 학습 중 절대 미사용) |
 
-> **⚠️ Data Leakage 방지 원칙**  
-> Test set은 최종 평가에서 단 1회만 사용.  
-> EarlyStopping, ReduceLROnPlateau 등 모든 학습 의사결정은 **Validation set** 기준으로만 수행.  
-> Test set 기반 하이퍼파라미터 조정 시, 선택 과정이 Test set에 간접적으로 맞춰져  
-> 실제보다 부풀려진 정확도 보고 위험 존재 (Optimistic Bias).
-
 ---
 
 ## 🏗️ Architecture
